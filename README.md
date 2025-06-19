@@ -40,7 +40,7 @@ pdf-chatbot/
     ```bash
     ollama pull gemma:2b
     ```
-    The Ollama service needs to be running in the background (usually started with the `ollama serve` command or the Ollama Desktop application is running). It is not necessary to run the model separately with `ollama run qwen2.5:latest` while the application is running.
+    The Ollama service needs to be running in the background (usually started with the `ollama serve` command or the Ollama Desktop application is running). It is not necessary to run the model separately with `ollama run gemma:2b` while the application is running.
 
     To list installed models:
     ```bash
