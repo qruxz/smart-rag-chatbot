@@ -1,4 +1,4 @@
-# Role-based PDF QA Chatbot (LangChain + FAISS + Qwen2.5 via Ollama)
+# Role-based PDF QA Chatbot (LangChain + FAISS + gemma:2b via Ollama)
 
 An intelligent chatbot powered by a local LLM that can role-play and answer questions based on PDF content.
 
@@ -8,7 +8,7 @@ An intelligent chatbot powered by a local LLM that can role-play and answer ques
 - PyMuPDF (fitz) – PDF text extraction
 - LangChain – Chunking, Retriever, PromptTemplate
 - FAISS – Vector database
-- Ollama (Qwen2.5:latest) – Embedding and LLM
+- Ollama (gemma:2b) – Embedding and LLM
 
 ## Project Folder Structure
 ```bash
@@ -36,9 +36,9 @@ pdf-chatbot/
     ```
 
 2.  **Ensure Ollama is running:**
-    Make sure the `qwen2.5:latest` model is running on Ollama. If not installed:
+    Make sure the `gemma:2b` model is running on Ollama. If not installed:
     ```bash
-    ollama pull qwen2.5:latest
+    ollama pull gemma:2b
     ```
     The Ollama service needs to be running in the background (usually started with the `ollama serve` command or the Ollama Desktop application is running). It is not necessary to run the model separately with `ollama run qwen2.5:latest` while the application is running.
 
@@ -46,7 +46,7 @@ pdf-chatbot/
     ```bash
     ollama list
     ```
-    You should see the `qwen2.5:latest` model (or a similar Qwen2.5 tag) in this list.
+    You should see the `gemma:2b` model (or a similar gemma:2b tag) in this list.
 
 
 3.  **Start the application:**
